@@ -1,11 +1,15 @@
 var inquirer = require('inquirer');
 var fs = require("fs");
 
+// Global variables
 var count = 0;
+var correct = 0;
+var wrong = 0;
+var total = 0;
 
+// Create BasicCard variables
 var BasicCard = function(basicFront, basicBack)
 {
-    // console.log("Hello!")
     this.basicFront = basicFront;
     this.basicBack = basicBack;
     this.printBasicCards = function() 
@@ -13,9 +17,9 @@ var BasicCard = function(basicFront, basicBack)
         console.log("Question: " + this.basicFront + "\nAnswer: " + this.basicBack + "\n----------");
     };
 
+    // Initializes BasicCard function
     this.callCard = function()
     {
-        console.log("being called")
         createBasicCard();
     };
 
@@ -111,7 +115,7 @@ var createBasicCard = function()
         console.log(basicArray);
         saveCard.saveDeck();
     }
-  };
+};
 
 var playBasic = function()
 {
@@ -131,10 +135,20 @@ var playBasic = function()
             var basicCard = new BasicCard(answers.basicFront, answers.basicBack);
             if(answers.QuizTime === allCards[count].basicBack){
                 console.log("\nCORRECT!");
+                correct++;
+                total++;
+                console.log("Correct: " + correct);
+                console.log("Wrong:" + wrong);
             }
             else
             {
                 console.log("\nSorry, that's not right.");
+                console.log("\n----------" + "\nHere is the correct answer:\n" + "\n----------");
+                console.log(allCards[count].basicBack);
+                wrong++;
+                total++;
+                console.log("Correct: " + correct);
+                console.log("Wrong:" + wrong);
             }
             count++;
             playBasic();
@@ -142,7 +156,9 @@ var playBasic = function()
     }
     else
     {
-        console.log("\You've finished!");
+        console.log("\n----------");
+        console.log("\You've finished!\n");
+        console.log("\nYou scored " + correct + " out of " + total + " questions!\n");
         inquirer.prompt([
             /* Pass your questions in here */
             {
@@ -157,6 +173,9 @@ var playBasic = function()
             if (answers.Initialize == "Yes") 
             {
                 count = 0;
+                correct = 0;
+                wrong = 0;
+                total = 0;
                 playBasic();
             }
             else 

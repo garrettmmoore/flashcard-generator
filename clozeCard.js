@@ -1,6 +1,7 @@
 var inquirer = require('inquirer');
 var fs = require("fs");
 
+// Global variables
 var count = 0;
 var correct = 0;
 var wrong = 0;
@@ -143,17 +144,20 @@ var playCloze = function(){
             }
             else{
                 console.log("\nSorry, that's not right.");
+                console.log("\n----------" + "\nHere is the correct answer:\n" + "\n----------");
+                console.log(allCards[count].clozeBack + " " + allCards[count].clozeFront);
                 wrong++;
                 total++;
+                console.log("\n----------");
                 console.log("Correct: " + correct);
                 console.log("Wrong:" + wrong);
             }
             count++;
             playCloze();
-
         });
     }
     else{
+        console.log("\n----------");
         console.log("\You've finished!");
         console.log("\nYou scored " + correct + " out of " + total + " questions!\n");
         inquirer.prompt([

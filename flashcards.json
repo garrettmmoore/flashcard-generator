@@ -1,61 +1,49 @@
 {
-  "clozeFront": "Hello buddy",
-  "clozeBack": "ok"
+  "basicFront": "hello",
+  "basicBack": "okay cool"
 },{
-  "clozeFront": "...was the first president of the US",
-  "clozeBack": "George"
+  "basicFront": "yes dude",
+  "basicBack": "no dude"
 },{
-  "clozeFront": "hello kitty",
-  "clozeBack": "Mike"
+  "basicFront": "yes dude",
+  "basicBack": "no dde"
 },{
-  "clozeFront": "monkey",
-  "clozeBack": "donkey"
+  "basicFront": "fsfs",
+  "basicBack": "fefef"
+}{
+  "clozeFront": "...was the president of the united states.",
+  "clozeBack": "Obama"
+},{
+  "clozeFront": "...was the new teacher.",
+  "clozeBack": "Taylor"
+},{
+  "clozeFront": "...he was the oldest person.",
+  "clozeBack": "Grandpa"
+},{
+  "clozeFront": "he was the monkey",
+  "clozeBack": "monkey"
 }{
   "clozeFront": "Hello",
   "clozeBack": "yes"
 },{
-  "clozeFront": "hello",
+  "clozeFront": "sfsfasdfa",
   "clozeBack": "no"
 },{
-  "clozeFront": "hello",
-  "clozeBack": "no"
+  "clozeFront": "yewefaw",
+  "clozeBack": "new"
 },{
-  "clozeFront": "hello",
-  "clozeBack": "yay"
+  "clozeFront": "fsfawfgwa",
+  "clozeBack": "no"
 }{
-  "clozeFront": "yes",
-  "clozeBack": "no"
+  "basicFront": "sjdflasfdjhsa",
+  "basicBack": "hello"
 },{
-  "clozeFront": "yes",
-  "clozeBack": "no"
+  "basicFront": "fhjkfjskdf",
+  "basicBack": "hello"
 },{
-  "clozeFront": "yes",
-  "clozeBack": "maybe"
+  "basicFront": "hfekwfj",
+  "basicBack": "sfdkjdsf"
 },{
-  "clozeFront": "yes",
-  "clozeBack": "maybe"
-}{
-  "basicFront": "fsds",
-  "basicBack": "fewf"
-},{
-  "basicFront": "fsf",
-  "basicBack": "eys"
-},{
-  "basicFront": "no ",
-  "basicBack": "maybe"
-},{
-  "basicFront": "ok",
-  "basicBack": "yeh"
-}{
-  "clozeFront": "yes",
-  "clozeBack": "dfssf"
-},{
-  "clozeFront": "few",
-  "clozeBack": "sdfs"
-},{
-  "clozeFront": "gwgw",
-  "clozeBack": "dsfs"
-},{
-  "clozeFront": "few",
-  "clozeBack": "dsfs"
+  "basicFront": "hjkh",
+  "basicBack": "f"
 }
