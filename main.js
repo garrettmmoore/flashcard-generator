@@ -30,9 +30,6 @@ inquirer.prompt([
         // createCloze.newUserSearch(userName, userLocation);
         createCloze.callCard();
     } 
-});
-    
-    
-    
+});    
     
  

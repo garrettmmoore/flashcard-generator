@@ -2,7 +2,9 @@ var inquirer = require('inquirer');
 var fs = require("fs");
 
 var count = 0;
-
+var correct = 0;
+var wrong = 0;
+var total = 0;
 
 // Create ClozeCard Constructor
 var ClozeCard = function(clozeFront, clozeBack) 
@@ -70,7 +72,7 @@ var createClozeCard = function() {
         {
           type:"input",
           name: "clozeFront",
-          message: "Enter your question for your cloze flashcard? "
+          message: "Enter your question for your cloze flashcard. Enter '...' where the answer should be inserted:"
         }, 
         {
           type:"input",
@@ -134,9 +136,17 @@ var playCloze = function(){
             // console.log("Question: " + answers.basicFront);
             if(answers.QuizTime === allCards[count].clozeBack){
                 console.log("\nCORRECT!");
+                correct++;
+                total++;
+                console.log("Correct: " + correct);
+                console.log("Wrong:" + wrong);
             }
             else{
                 console.log("\nSorry, that's not right.");
+                wrong++;
+                total++;
+                console.log("Correct: " + correct);
+                console.log("Wrong:" + wrong);
             }
             count++;
             playCloze();
@@ -145,6 +155,7 @@ var playCloze = function(){
     }
     else{
         console.log("\You've finished!");
+        console.log("\nYou scored " + correct + " out of " + total + " questions!\n");
         inquirer.prompt([
             /* Pass your questions in here */
             {
@@ -158,6 +169,9 @@ var playCloze = function(){
             // Use user feedback for... whatever!!
             if (answers.Initialize == "Yes") {
                 count = 0;
+                correct = 0;
+                wrong = 0;
+                total = 0;
                 playCloze();
                 
                 // console.log("basic!!!!")

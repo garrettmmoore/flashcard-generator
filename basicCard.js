@@ -3,18 +3,20 @@ var fs = require("fs");
 
 var count = 0;
 
-var BasicCard = function(basicFront, basicBack) 
+var BasicCard = function(basicFront, basicBack)
 {
     // console.log("Hello!")
     this.basicFront = basicFront;
     this.basicBack = basicBack;
-    this.printBasicCards = function() {
+    this.printBasicCards = function() 
+    {
         console.log("Question: " + this.basicFront + "\nAnswer: " + this.basicBack + "\n----------");
-      };
+    };
 
-    this.callCard = function(){
+    this.callCard = function()
+    {
         console.log("being called")
-    createBasicCard();
+        createBasicCard();
     };
 
     this.saveDeck = function()
@@ -47,22 +49,22 @@ var BasicCard = function(basicFront, basicBack)
                     }       
                 });
             }
-            else{
+            else
+            {
                 console.log("Okay, maybe next time then.");
-            }
-            
-        });
-        
+            }           
+        });  
     }
 }
 
 var basicArray = [];
-// var basicArrayBack =[];
 var allCards = [];
 
-var createBasicCard = function() {
-    // if the length of the team array is 8 or higher, no more questions will be asked
-    if (basicArray.length < 4) {
+var createBasicCard = function() 
+{
+    // if the length of the basicArray is 4 or higher, no more questions will be asked
+    if (basicArray.length < 4) 
+    {
       console.log("\nNEW Card!\n");
       inquirer.prompt([
         {
@@ -75,47 +77,47 @@ var createBasicCard = function() {
           name: "basicBack",
           message: "Enter your answer for your basic flashcard: "
         }
-      ]).then(function(answers) {
+      ]).then(function(answers) 
+      {
         // runs the constructor and places the new BasicCard object into the variable basic.
         var basicCard = new BasicCard(answers.basicFront, answers.basicBack);
-        // adds a player to the basicArray if there are less than 4 basicCard objects in it.
-        if (basicArray.length < 4) {
+        // adds a basicCard to the basicArray if there are less than 4 basicCard objects in it.
+        if (basicArray.length < 4) 
+        {
           basicArray.push(JSON.stringify(basicCard, null, 2));
-        //   basicArray.push(JSON.stringify(basicCard.basicFront, null, 2));
-        //   basicArray.push(JSON.stringify(basicCard.basicBack, null, 2));
           
           allCards.push(basicCard);
          
           console.log(basicCard.basicFront + " added to the basicArrayFront");
           console.log(basicCard.basicBack + " added to the basicArrayBack");
         }
-        else {
-          console.log(" You've added too many players");
+        else 
+        {
+          console.log(" You've added too many Flash Cards");
         }
         // runs the createBasicCard function once more
         createBasicCard();
       });
     }
-    else {
-      // loops through the callCards array and calls printBasicCards() for each object it contains
-
-      console.log("Here are all of your created FlashCards: ")
-
-      for (var i = 0; i < allCards.length; i++) {
-        allCards[i].printBasicCards();
-      }
-    var saveCard = new BasicCard();
-      console.log(basicArray);
-      saveCard.saveDeck();
+    else 
+    {
+        // loops through the callCards array and calls printBasicCards() for each object it contains
+        console.log("Here are all of your created FlashCards: ")
+        for (var i = 0; i < allCards.length; i++) 
+        {
+            allCards[i].printBasicCards();
+        }
+        var saveCard = new BasicCard();
+        console.log(basicArray);
+        saveCard.saveDeck();
     }
   };
 
-var playBasic = function(){
-    
+var playBasic = function()
+{
     if (count < allCards.length) 
     {
         console.log("\n----------" + "\nQuestion " + count + ": " + allCards[count].basicFront + "\n----------");
-    
         inquirer.prompt([
             /* Pass your questions in here */
             {
@@ -162,7 +164,6 @@ var playBasic = function(){
                console.log("Okay, see you next time!")
             } 
         });
-        
     }   
 };
 

@@ -1,157 +1,61 @@
 {
-  "basicFront": "WHo is the strongest?",
-  "basicBack": "I am"
+  "clozeFront": "Hello buddy",
+  "clozeBack": "ok"
 },{
-  "basicFront": "who is the coolest?",
-  "basicBack": "me"
+  "clozeFront": "...was the first president of the US",
+  "clozeBack": "George"
 },{
-  "basicFront": "Who is thirsty",
-  "basicBack": "him"
+  "clozeFront": "hello kitty",
+  "clozeBack": "Mike"
 },{
-  "basicFront": "hello",
-  "basicBack": "bye"
+  "clozeFront": "monkey",
+  "clozeBack": "donkey"
 }{
-  "basicFront": "Who is strong?",
-  "basicBack": "me"
-},{
-  "basicFront": "Whos is weak",
-  "basicBack": "him"
-},{
-  "basicFront": "who is far",
-  "basicBack": "her"
-},{
-  "basicFront": "who is the bomb",
-  "basicBack": "me"
-}{
-  "basicFront": "who is strong",
-  "basicBack": "me"
-},{
-  "basicFront": "who is weak",
-  "basicBack": "you"
-},{
-  "basicFront": "who is it",
-  "basicBack": "me"
-},{
-  "basicFront": "who is there",
-  "basicBack": "you"
-}{
-  "basicFront": "Who is it",
-  "basicBack": "me"
-},{
-  "basicFront": "who is there",
-  "basicBack": "you"
-},{
-  "basicFront": "who is here",
-  "basicBack": "me"
-},{
-  "basicFront": "who is here",
-  "basicBack": "you"
-}{
-  "basicFront": "heeeeewew",
-  "basicBack": "dsffsdf"
-},{
-  "basicFront": "you go",
-  "basicBack": "ok"
-},{
-  "basicFront": "i go",
-  "basicBack": "okay"
-},{
-  "basicFront": "nooooo",
-  "basicBack": "yesss"
-}{
-  "basicFront": "Who is at the zoo",
-  "basicBack": "me"
-},{
-  "basicFront": "Who is at the mall?",
-  "basicBack": "You"
-},{
-  "basicFront": "Who is at the church?",
-  "basicBack": "me"
-},{
-  "basicFront": "Who is at the house",
-  "basicBack": "You"
-}{
-  "clozeFront": "Yes",
-  "clozeBack": "Hellloooo"
-},{
-  "clozeFront": "there",
-  "clozeBack": "asdfs"
-},{
-  "clozeFront": "whyyy",
-  "clozeBack": "nooo"
-},{
-  "clozeFront": "ok",
-  "clozeBack": "Fine"
-}{
-  "clozeFront": "Whyyy",
-  "clozeBack": "okay there"
-},{
-  "clozeFront": "hellooo",
-  "clozeBack": "there we go"
-},{
-  "clozeFront": "Yes there",
-  "clozeBack": "WHy dude"
-},{
-  "clozeFront": "Noooo broo",
-  "clozeBack": "YEs bro"
-}{
-  "clozeFront": "Hey man whats up?",
-  "clozeBack": "Hello"
-},{
-  "clozeFront": "Why are you here",
-  "clozeBack": "because"
-},{
-  "clozeFront": "I like the zoo",
+  "clozeFront": "Hello",
   "clozeBack": "yes"
 },{
-  "clozeFront": "Noooo",
-  "clozeBack": "ok"
+  "clozeFront": "hello",
+  "clozeBack": "no"
+},{
+  "clozeFront": "hello",
+  "clozeBack": "no"
+},{
+  "clozeFront": "hello",
+  "clozeBack": "yay"
 }{
-  "basicFront": "sfsfawfewwe",
-  "basicBack": "fawf"
+  "clozeFront": "yes",
+  "clozeBack": "no"
 },{
-  "basicFront": "sdfewwf",
-  "basicBack": "fwe"
+  "clozeFront": "yes",
+  "clozeBack": "no"
 },{
-  "basicFront": "fewfew",
-  "basicBack": "dff"
+  "clozeFront": "yes",
+  "clozeBack": "maybe"
 },{
-  "basicFront": "efw",
-  "basicBack": "sdfs"
+  "clozeFront": "yes",
+  "clozeBack": "maybe"
 }{
-  "basicFront": "fsfwewfewf",
-  "basicBack": "dsfs"
+  "basicFront": "fsds",
+  "basicBack": "fewf"
 },{
-  "basicFront": "Yes",
-  "basicBack": "no"
+  "basicFront": "fsf",
+  "basicBack": "eys"
 },{
-  "basicFront": "why",
-  "basicBack": "beacue"
+  "basicFront": "no ",
+  "basicBack": "maybe"
 },{
-  "basicFront": "sffe",
-  "basicBack": "sdfs"
+  "basicFront": "ok",
+  "basicBack": "yeh"
 }{
-  "basicFront": "fsfwafewf",
-  "basicBack": "sf"
+  "clozeFront": "yes",
+  "clozeBack": "dfssf"
 },{
-  "basicFront": "sfewfwefe",
-  "basicBack": "sfs"
+  "clozeFront": "few",
+  "clozeBack": "sdfs"
 },{
-  "basicFront": "helllo",
-  "basicBack": "man"
+  "clozeFront": "gwgw",
+  "clozeBack": "dsfs"
 },{
-  "basicFront": "swhew",
-  "basicBack": "ok"
-}{
-  "clozeFront": "fdsfe",
-  "clozeBack": "dsf"
-},{
-  "clozeFront": "fewewf",
-  "clozeBack": "df"
-},{
-  "clozeFront": "Hellooo",
-  "clozeBack": "yeah"
-},{
-  "clozeFront": "why",
-  "clozeBack": "ok"
+  "clozeFront": "few",
+  "clozeBack": "dsfs"
 }
