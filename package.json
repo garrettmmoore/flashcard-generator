@@ -1,0 +1,27 @@
+{
+  "name": "flashcard_generator",
+  "version": "1.0.0",
+  "description": "Flash card back end",
+  "main": "main.js",
+  "scripts": {
+    "test": "Good to go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrettmmoore/flashcard_generator.git"
+  },
+  "keywords": [
+    "Flash",
+    "Card"
+  ],
+  "author": "Garrett Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrettmmoore/flashcard_generator/issues"
+  },
+  "homepage": "https://github.com/garrettmmoore/flashcard_generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.2.2"
+  }
+}
