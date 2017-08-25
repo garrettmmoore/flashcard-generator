@@ -70,4 +70,88 @@
 },{
   "basicFront": "Who is at the house",
   "basicBack": "You"
+}{
+  "clozeFront": "Yes",
+  "clozeBack": "Hellloooo"
+},{
+  "clozeFront": "there",
+  "clozeBack": "asdfs"
+},{
+  "clozeFront": "whyyy",
+  "clozeBack": "nooo"
+},{
+  "clozeFront": "ok",
+  "clozeBack": "Fine"
+}{
+  "clozeFront": "Whyyy",
+  "clozeBack": "okay there"
+},{
+  "clozeFront": "hellooo",
+  "clozeBack": "there we go"
+},{
+  "clozeFront": "Yes there",
+  "clozeBack": "WHy dude"
+},{
+  "clozeFront": "Noooo broo",
+  "clozeBack": "YEs bro"
+}{
+  "clozeFront": "Hey man whats up?",
+  "clozeBack": "Hello"
+},{
+  "clozeFront": "Why are you here",
+  "clozeBack": "because"
+},{
+  "clozeFront": "I like the zoo",
+  "clozeBack": "yes"
+},{
+  "clozeFront": "Noooo",
+  "clozeBack": "ok"
+}{
+  "basicFront": "sfsfawfewwe",
+  "basicBack": "fawf"
+},{
+  "basicFront": "sdfewwf",
+  "basicBack": "fwe"
+},{
+  "basicFront": "fewfew",
+  "basicBack": "dff"
+},{
+  "basicFront": "efw",
+  "basicBack": "sdfs"
+}{
+  "basicFront": "fsfwewfewf",
+  "basicBack": "dsfs"
+},{
+  "basicFront": "Yes",
+  "basicBack": "no"
+},{
+  "basicFront": "why",
+  "basicBack": "beacue"
+},{
+  "basicFront": "sffe",
+  "basicBack": "sdfs"
+}{
+  "basicFront": "fsfwafewf",
+  "basicBack": "sf"
+},{
+  "basicFront": "sfewfwefe",
+  "basicBack": "sfs"
+},{
+  "basicFront": "helllo",
+  "basicBack": "man"
+},{
+  "basicFront": "swhew",
+  "basicBack": "ok"
+}{
+  "clozeFront": "fdsfe",
+  "clozeBack": "dsf"
+},{
+  "clozeFront": "fewewf",
+  "clozeBack": "df"
+},{
+  "clozeFront": "Hellooo",
+  "clozeBack": "yeah"
+},{
+  "clozeFront": "why",
+  "clozeBack": "ok"
 }

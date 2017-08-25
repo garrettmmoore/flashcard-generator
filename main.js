@@ -28,7 +28,7 @@ inquirer.prompt([
     }
     else {
         // createCloze.newUserSearch(userName, userLocation);
-        console.log("Clozeee!!!")
+        createCloze.callCard();
     } 
 });
     

@@ -1,6 +1,8 @@
 var inquirer = require('inquirer');
 var fs = require("fs");
 
+var count = 0;
+
 var BasicCard = function(basicFront, basicBack) 
 {
     // console.log("Hello!")
@@ -74,11 +76,9 @@ var createBasicCard = function() {
           message: "Enter your answer for your basic flashcard: "
         }
       ]).then(function(answers) {
-        // runs the constructor and places the new player object into the variable player.
-        // turns the offense and defense variables into integers as well with parseInt
+        // runs the constructor and places the new BasicCard object into the variable basic.
         var basicCard = new BasicCard(answers.basicFront, answers.basicBack);
-        // adds a player to the starters array if there are less than five player objects in it.
-        // otherwise adds the newest player object to the subs array
+        // adds a player to the basicArray if there are less than 4 basicCard objects in it.
         if (basicArray.length < 4) {
           basicArray.push(JSON.stringify(basicCard, null, 2));
         //   basicArray.push(JSON.stringify(basicCard.basicFront, null, 2));
@@ -86,23 +86,21 @@ var createBasicCard = function() {
           
           allCards.push(basicCard);
          
-          
           console.log(basicCard.basicFront + " added to the basicArrayFront");
           console.log(basicCard.basicBack + " added to the basicArrayBack");
         }
         else {
-
           console.log(" You've added too many players");
         }
-
-        // runs the createPlayer function once more
+        // runs the createBasicCard function once more
         createBasicCard();
       });
     }
     else {
-        // console.log(basicArrayFront);
-        // console.log(basicArrayBack);
-      // loops through the team array and calls printStats() for each object it contains
+      // loops through the callCards array and calls printBasicCards() for each object it contains
+
+      console.log("Here are all of your created FlashCards: ")
+
       for (var i = 0; i < allCards.length; i++) {
         allCards[i].printBasicCards();
       }
@@ -112,65 +110,6 @@ var createBasicCard = function() {
     }
   };
 
-// function playBasic(){
-//     inquirer.prompt([
-//         /* Pass your questions in here */
-//         {
-//             type:"checkbox",
-//             name: "BasicQuiz",
-//             message: "Would you like to take you flashcards quiz?",
-//             choices: ["Yes", "No"]
-//         },
-//     ])
-//     .then(function (answers) 
-//     {
-//         // Use user feedback for... whatever!!
-//         if (answers.BasicQuiz == "Yes") 
-//         {
-
-//             var basicCard = new BasicCard(answers.basicFront, answers.basicBack);
-
-        
-//         }     
-//               for (var key in basicCard) 
-//               {
-              
-//                 // If the genre matches the key then print that band.
-//                 if (key ==  answers.basicBack) 
-//                 {
-//                   console.log("An answer " + key + " for " + bandList[key] + "is correct!.");
-//                 }
-//               }
-    
-           
-            
-
-        
-//         // else 
-//         // {
-//         //     // createCloze.newUserSearch(userName, userLocation);
-//         //     console.log("Ok, no problem. See you next time.")
-//         // } 
-//     });
-// }
-
-// function playBasic(){
-//     inquirer.prompt([
-//         /* Pass your questions in here */
-//         {
-//             type:"checkbox",
-//             name: "BasicQuizPrompt",
-//             message: "Would you like to take you flashcards quiz?",
-//             choices: ["Yes", "No"]
-//         },
-//     ])
-//     .then(function (answers) 
-//     {
-
-
-//     });
-// }
-var count = 0;
 var playBasic = function(){
     
     if (count < allCards.length) 
@@ -182,36 +121,49 @@ var playBasic = function(){
             {
                 type:"input",
                 name: "QuizTime",
-                message: "Input your answer: ",
-                
+                message: "Input your answer: ",               
             },
         ])
         .then(function (answers) 
         {
             var basicCard = new BasicCard(answers.basicFront, answers.basicBack);
-            // console.log("Question: " + answers.basicFront);
             if(answers.QuizTime === allCards[count].basicBack){
                 console.log("\nCORRECT!");
             }
-            else{
+            else
+            {
                 console.log("\nSorry, that's not right.");
             }
             count++;
             playBasic();
-
+        });      
+    }
+    else
+    {
+        console.log("\You've finished!");
+        inquirer.prompt([
+            /* Pass your questions in here */
+            {
+                type:"checkbox",
+                name: "Initialize",
+                message: "Would you like to play again?",
+                choices: ["Yes", "No"]
+            },
+        ])
+        .then(function (answers) 
+        {
+            if (answers.Initialize == "Yes") 
+            {
+                count = 0;
+                playBasic();
+            }
+            else 
+            {
+               console.log("Okay, see you next time!")
+            } 
         });
         
-    }
-    else{
-        console.log("\You've finished!");
-    }
-    
-    
+    }   
 };
-
-
-
-
-
 
 module.exports = BasicCard;
