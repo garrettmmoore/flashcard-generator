@@ -10,11 +10,10 @@ var createBasic = new BasicCard();
 var createCloze = new ClozeCard();
 
 inquirer.prompt([
-    /* Pass your questions in here */
     {
         type:"checkbox",
         name: "Initialize",
-        message: "Hello, do you want to take your FlashCards quiz or create new FlashCards?",
+        message: "Hello, would you like to make five Basic or five Cloze FlashCards?",
         choices: ["Basic", "Cloze"]
     },
 ])
@@ -22,9 +21,8 @@ inquirer.prompt([
     // Use user feedback for... whatever!!
     if (answers.Initialize == "Basic") {
 
+
         createBasic.callCard();
-        
-        // console.log("basic!!!!")
     }
     else {
         // createCloze.newUserSearch(userName, userLocation);
