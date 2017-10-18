@@ -1,0 +1,18 @@
+[
+    {
+        "basicFront": "What is 2 + 2?",
+        "basicBack": "4"
+    }, {
+        "basicFront": "What is 3 + 3?",
+        "basicBack": "6"
+    }, {
+        "basicFront": "What is 5 + 5?",
+        "basicBack": "10"
+    }, {
+        "basicFront": "What is 4 * 3?",
+        "basicBack": "12"
+    }, {
+        "basicFront": "What is 2 * 9?",
+        "basicBack": "18"
+    }
+]
