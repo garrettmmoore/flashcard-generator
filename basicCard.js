@@ -41,7 +41,6 @@ var BasicCard = function (basicFront, basicBack) {
             .then(function (answers) {
                 if (answers.Save == "Yes") {
                     var basicTxt = basicArray;
-                    // var basicAnsTxt = basicArrayBack;           
                     fs.appendFile("flashcards.json", basicTxt, function (err) {
                         // If an error was experienced we say it.
                         if (err) {
@@ -81,7 +80,6 @@ var createBasicCard = function () {
             // adds a basicCard to the basicArray if there are less than 4 basicCard objects in it.
             if (basicArray.length < 5) {
                 basicArray.push(JSON.stringify(basicCard, null, 2));
-
                 allCards.push(basicCard);
                 console.log("\nSuccess!: " + basicCard.basicFront + " added to the Basic Card Questions.");
                 console.log("---------");
@@ -187,5 +185,5 @@ var playBasic = function () {
     }
 };
 
-//export BasicCard Constructor
+// Export BasicCard Constructor
 module.exports = BasicCard;

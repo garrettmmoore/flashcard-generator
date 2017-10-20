@@ -8,6 +8,10 @@ var correct = 0;
 var wrong = 0;
 var total = 0;
 
+// Arrays to hold user question and answer input
+var clozeArray = [];
+var allCards = [];
+
 // Create ClozeCard Constructor
 var ClozeCard = function (clozeFront, clozeBack) {
     // Create instances of constructor 
@@ -54,10 +58,6 @@ var ClozeCard = function (clozeFront, clozeBack) {
             });
     }
 }
-
-// Arrays to hold user question and answer input
-var clozeArray = [];
-var allCards = [];
 
 // Function to prompt user to create flashcards
 var createClozeCard = function () {
@@ -193,5 +193,5 @@ var playCloze = function () {
     }
 };
 
-//export ClozeCard constructor
+// Export ClozeCard constructor
 module.exports = ClozeCard;

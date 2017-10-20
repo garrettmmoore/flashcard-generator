@@ -16,7 +16,6 @@ inquirer.prompt([{
         choices: ["Basic", "Cloze"]
     }, ])
     .then(function (answers) {
-        // Use user feedback for... whatever!!
         if (answers.Initialize == "Basic") {
             createBasic.callCard();
         } else {
